@@ -1,0 +1,528 @@
+/* ===================================
+   Thimdrine — feuille de style
+   Charte graphique officielle
+   =================================== */
+
+/* ----- Variables (charte) ----- */
+:root {
+  /* Couleurs principales */
+  --couleur-thym: #2e5c35;
+  --couleur-thym-fonce: #2c4326;
+  --couleur-miel: #eda226;
+  --couleur-moutarde: #a99c04; /* Accents, boutons, éléments décoratifs */
+  --couleur-figue: #8a2a46;
+  --couleur-lin: #fbf9ec;
+  --couleur-sable: #f3ead7;
+  --couleur-terre: #2b221b;
+  --couleur-terre-douce: #5c4f42;
+  --couleur-blanc: #ffffff;
+
+  /* Typographies */
+  --police-titre: "Lora", Georgia, serif;
+  --police-texte: "Source Sans 3", Arial, sans-serif;
+}
+
+/* ----- Base ----- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: var(--police-texte);
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--couleur-terre);
+  background-color: var(--couleur-lin);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 16px;
+  font-family: var(--police-titre);
+  line-height: 1.25;
+  color: var(--couleur-thym-fonce);
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+a {
+  color: var(--couleur-thym);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.conteneur {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.conteneur1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  background-color: #fbf9ec;
+}
+.infoclient{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 400PX;
+  padding: 10px;
+  margin-right: 0;
+}
+.bouton bouton-contour{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+#image1 {
+  width: 600px;
+}
+.section {
+  padding-block: 40px;
+}
+
+.section-sable {
+  background-color: var(--couleur-sable);
+  
+}
+
+.infocompte{
+  /*position: relative;*/
+  display: grid;
+  grid-template-columns:60% 40%;
+}
+.compte{
+  /* position:absolute; */
+ grid-column-start: 1;
+  width: 0 auto;
+}
+
+.intro {
+  padding-inline: 40px;
+  margin-block: 40px;
+  color: var(--couleur-terre-douce);
+}
+
+.lien {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+/* ----- En-tête ----- */
+.entete {
+  background-color: var(--couleur-blanc);
+  border-bottom: 1px solid var(--couleur-sable);
+}
+
+.entete-contenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--police-titre);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--couleur-thym-fonce);
+  text-decoration: none;
+}
+
+.logo img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.menu a {
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--couleur-terre);
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: var(--couleur-sable);
+}
+
+/* Lien de la page active */
+.menu a.actif {
+  background-color: var(--couleur-thym);
+  color: var(--couleur-blanc);
+}
+
+/* ----- Boutons ----- */
+.bouton {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 2px solid var(--couleur-thym);
+  border-radius: 30px;
+  background-color: var(--couleur-moutarde);
+  color: var(--couleur-blanc);
+  font-family: var(--police-texte);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bouton:hover {
+  background-color: var(--couleur-thym-fonce);
+  border-color: var(--couleur-thym-fonce);
+}
+
+.bouton-contour {
+  background-color: transparent;
+  color: var(--couleur-thym);
+  margin-left: 25px;
+}
+
+.bouton-contour:hover {
+  background-color: var(--couleur-sable);
+}
+
+.bouton-miel {
+  border-color: var(--couleur-miel);
+  background-color: var(--couleur-miel);
+  color: var(--couleur-terre);
+}
+
+.bouton-miel:hover {
+  background-color: #d9921f;
+  border-color: #d9921f;
+}
+
+/* Nouveau bouton Moutarde */
+.bouton-moutarde {
+  border-color: var(--couleur-moutarde);
+  background-color: var(--couleur-moutarde);
+  color: var(--couleur-terre);
+}
+
+.bouton-moutarde:hover {
+  background-color: #968b03;
+  border-color: #968b03;
+}
+
+/* ----- Bandeau d'accroche (Hero) ----- */
+.hero {
+  margin-top: 10px;
+  padding: 20px 0;
+  background-color: var(--couleur-blanc);
+}
+
+.surtitre {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--couleur-moutarde); /* utilise la moutarde */
+}
+
+.accroche {
+  margin-bottom: 24px;
+  font-size: 18px;
+  color: var(--couleur-terre-douce);
+}
+
+.boutons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.hero-image {
+  width: 500px;
+  height: 450px;
+  margin-top: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* ----- Présentation ----- */
+.presentation {
+  max-width: 768px;
+}
+
+/* ----- Cartes produits ----- */
+.cartes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+.carte {
+  flex: 1;
+  min-width: 260px;
+  max-width: 340px;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: var(--couleur-blanc);
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  box-shadow: 0 4px 16px rgba(43, 34, 27, 0.08);
+}
+
+.carte img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.carte-texte {
+  padding: 24px;
+}
+.carte.bouton {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 20 px;
+}
+
+.prix {
+  margin: 0 0 16px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--couleur-miel);
+}
+
+.prix span {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--couleur-terre-douce);
+}
+
+/* ----- Appel à l'action ----- */
+.appel {
+  padding: 64px 0;
+  margin-top: 20px;
+  background-color: var(--couleur-thym);
+  color: var(--couleur-blanc);
+  text-align: center;
+  margin: 0px;
+}
+
+.appel h2 {
+  color: var(--couleur-blanc);
+}
+
+.appel p {
+  max-width: 576px;
+  margin: 0 auto 24px;
+}
+
+/* ----- Pied de page ----- */
+.pied {
+  min-height: 10vh;
+  padding-top: 40px;
+  background-color: var(--couleur-thym-fonce);
+  color: var(--couleur-lin);
+}
+
+.pied-colonnes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.pied-colonnes div {
+  flex: 1;
+  min-width: 220px;
+}
+
+.pied h2 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: var(--couleur-moutarde); /* moutarde pour les titres du footer */
+}
+
+.pied a {
+  color: var(--couleur-lin);
+  text-decoration: none;
+}
+
+.pied a:hover {
+  color: var(--couleur-moutarde);
+}
+
+.pied-colonnes p,
+.pied address {
+  margin: 0;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.pied ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pied li {
+  margin-bottom: 4px;
+}
+
+.copyright {
+  margin: 10px 0 0;
+  padding: 6px;
+  border-top: 1px solid var(--couleur-thym);
+  font-size: 14px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+/* ----- Ordinateur : à partir de 1024 px ----- */
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 52px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .conteneur {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .menu a {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+
+  .hero {
+    padding: 64px 0;
+  }
+
+  .hero-contenu {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .hero-texte,
+  .hero-image {
+    flex: 1;
+  }
+
+  .hero-image {
+    margin-top: 0;
+  }
+
+  .accroche {
+    font-size: 20px;
+  }
+}
+#valeurs {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+#val1 {
+  background-color: #ffffff;
+  border: 2px;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
+#val2 {
+  background-color: #ffffff;
+  border: 2px;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
+#val3 {
+  background-color: #ffffff;
+  border: 2px;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
+#auth {
+  height: 80px;
+  width: 300px;
+  background-color: #f6eedc;
+  text-align: center;
+  font-size: 1.6em;
+  padding-top: 20px;
+}
+#solida {
+  height: 80px;
+  width: 300px;
+  font-size: 1.6em;
+  background-color: #eef0e2;
+  text-align: center;
+  padding-top: 20px;
+}
+#respect {
+  height: 80px;
+  width: 300px;
+  font-size: 1.6em;
+  background-color: #f7e9ec;
+  text-align: center;
+  padding-top: 20px;
+}
+#nosvaleurs {
+  margin-top: 40px;
+}
+.parag {
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.formulr{
+  display: flex;
+  flex-direction: column;
+}
