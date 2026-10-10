@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Thimdrine, coopérative de 25 femmes de Nador : miel de thym, huile d'olive et confiture de figue de barbarie du Rif."
+    />
+    <title>Accueil | Thimdrine</title>
+    <link rel="icon" href="images/logo.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- En-tête : le même sur toutes les pages -->
+    <header class="entete">
+      <div class="conteneur entete-contenu">
+        <a class="logo" href="index.html">
+          <img src="images/logo.jpeg" alt="" />
+          Thimdrine
+        </a>
+        <nav class="menu">
+          <a href="index.html">Accueil</a>
+          <a href="produits.html">Nos produits</a>
+          <a href="apropos.html">À propos</a>
+          <a class="actif" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="conteneur hero-contenu">
+        <div class="hero-texte">
+          <h1>Contactez-Nous</h1>
+          <p class="accroche">
+            Nous sommes là pour répondre à toutes vos questions
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact-->
+    <section>
+      <div class="formulr">
+        <div class="conteneur">
+          <h2>Formulaire de commande</h2>
+        </div>
+        <div class="infocompte">
+          <div>
+            <form class="compte">
+              <label for="nom"
+                >Nom Complet : <br /><input
+                size="50"
+                  type="text"
+                  id="nom"
+                  class="formlinput"
+                  placeholder="  Entrez votre nom"
+                /> </label
+              ><br />
+              <label for="tel">Téléphone : <br /><input
+                 size="50"
+                  type="tel"
+                  pattern="^(\+212|0)[5-7][0-9]{8}$"
+                  id="tel"
+                  class="formlinput"
+                  placeholder="  Entrez votre numero de tel"
+                /> </label
+              ><br />
+              <label for="quant">
+                Quantité :<br /><input
+                  placeholder="  Entrez la quantité"
+                  class="formlinput"
+                  type="number"
+                  id="quant"
+                  min="1"
+                /> </label
+              ><br />
+              <label>
+               Produits:<br />
+              <select id="prodct">
+                <option value="" selected disabled>Choisir un produit</option>
+                <option value="miel-500g">Miel de thym — 500 g</option>
+                <option value="bouteille de 1 L"> Huile d'olive extra vierge </option>
+                <option value="bouteille de 100 g">Huile d'argan</option>
+                <option value="pot de 250 g">Amlou traditionnel</option>
+                <option value=" pot de 350 g">
+                  Confiture de figue de barbarie — 350 g
+                </option>
+                <option value="sachet de 200 g">Ghassoul naturel</option>
+                <option value="plusieurs">Plusieurs produits</option>
+              </select>
+              <br />
+              <label for="mesg"
+                >Message<br /><input  placeholder="  Entrez un message" size="50" type="text" id="mesg" /> </label
+              ><br />
+              <div>
+          <a class="bouton bouton-contour" href="contact.html"
+            >Passer commande</a
+          >
+        </div>
+            </form>
+          </div>
+          <div class="infoclient">
+            <div class="icontel">
+              <img class="icon" src="images/tel.png" alt="" />
+              <p class="font">Téléphone</p>
+            </div>
+            <h3>05 36 00 00 00</h3>
+            <div class="icontel">
+              <img class="icon" src="images/gmail.png" alt="" />
+              <p class="font">Email</p>
+            </div>
+            <h3>contact@thimdrine.ma</h3>
+            <div class="icontel">
+              <img class="icon" src="images/localisation.png" alt="" />
+              <p class="font">Localisation</p>
+            </div>
+            <h3>Route de Selouane, Nador, Maroc</h3>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <!-- Appel à l'action -->
+
+    <section class="appel">
+      <div class="conteneur">
+        <h2>Envie de goûter au Rif ?</h2>
+        <p>
+          Envoyez-nous votre demande de commande : nous vous répondons sous 48
+          heures pour organiser la livraison ou le retrait à Nador.
+        </p>
+        <a class="bouton bouton-miel" href="contact.html"
+          >Faire une demande de commande</a
+        >
+      </div>
+    </section>
+
+    <!-- Pied de page : le même sur toutes les pages -->
+    <footer class="pied">
+      <div class="conteneur pied-colonnes">
+        <div>
+          <h2>Coopérative Thimdrine</h2>
+          <address>
+            Route de Selouane, Nador, Maroc<br />
+            Tél. : <a href="tel:+212536000000">05 36 00 00 00</a><br />
+            E-mail :
+            <a href="mailto:contact@thimdrine.ma">contact@thimdrine.ma</a>
+          </address>
+        </div>
+        <div>
+          <h2>Horaires</h2>
+          <p>Du lundi au samedi<br />de 9 h à 18 h</p>
+        </div>
+        <div>
+          <h2>Plan du site</h2>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="produits.html">Nos produits</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">
+        © 2026 Coopérative Thimdrine · Site réalisé à YouCode Nador
+      </p>
+    </footer>
+  </body>
+</html>
